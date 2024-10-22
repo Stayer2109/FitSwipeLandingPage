@@ -1,0 +1,68 @@
+.btn-chplay-container {
+	cursor: pointer;
+	min-width: 160px;
+	width: max-content;
+	display: flex;
+	flex-direction: row;
+	gap: 5px;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid white;
+	border-radius: 8px;
+	padding: 10px;
+	padding-right: 8px;
+	padding-left: 0;
+
+	.text-container {
+		text-align: left;
+
+		.download {
+			font-size: var(--SUBTITLE-SIZE);
+		}
+
+		.store {
+			font-size: var(--BODY-SIZE);
+			font-weight: bold;
+			line-height: normal;
+		}
+	}
+
+	&:hover {
+		transform: scale(1.05);
+		transition: transform 0.12s;
+	}
+}
+
+.btn-appstore-container {
+	cursor: pointer;
+	min-width: 160px;
+	width: max-content;
+	display: flex;
+	flex-direction: row;
+	gap: 5px;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid white;
+	border-radius: 8px;
+	padding: 10px;
+	padding-right: 8px;
+
+	.text-container {
+		text-align: left;
+
+		.download {
+			font-size: var(--SUBTITLE-SIZE);
+		}
+
+		.store {
+			font-size: var(--BODY-SIZE);
+			font-weight: bold;
+			line-height: normal;
+		}
+	}
+
+	&:hover {
+		transform: scale(1.05);
+		transition: transform 0.12s;
+	}
+}

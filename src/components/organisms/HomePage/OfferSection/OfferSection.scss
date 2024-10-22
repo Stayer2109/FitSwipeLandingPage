@@ -1,0 +1,82 @@
+.offer-willing-container {
+	.offer-container {
+		& > h1 {
+			font-size: var(--font-size-h2);
+			text-align: center;
+		}
+
+		.offer-item-container {
+			margin-top: 10px;
+			padding: 0 170px;
+			display: flex;
+			justify-content: center;
+			gap: 100px;
+
+			.offer-card {
+				width: 15%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+
+				.offer-image {
+					object-fit: cover;
+					border-radius: 12px;
+					border: 2px solid var(--APP-GREEN-COLOR);
+				}
+
+				& > h2 {
+					margin-top: 12px;
+					text-align: center;
+					padding-top: 6px;
+					padding-bottom: 2px;
+					font-size: var(--font-size-h6);
+					text-transform: uppercase;
+					text-align: center;
+					width: 100%;
+					color: white;
+					background-color: var(--APP-GREEN-COLOR);
+				}
+
+				& > p {
+					margin-top: 20px;
+					text-align: center;
+					font-size: var(--font-size-base);
+				}
+			}
+		}
+	}
+
+	.willing-container {
+		& > h1 {
+			font-size: var(--font-size-h2);
+			text-align: center;
+		}
+
+		.willing-item-container {
+			margin-top: 10px;
+			padding: 0 170px;
+			display: flex;
+			justify-content: center;
+			gap: 100px;
+
+			.willing-card {
+				width: 15%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+
+				.willing-image {
+					object-fit: cover;
+					border-radius: 12px;
+					border: 2px solid var(--APP-GREEN-COLOR);
+				}
+
+				& > p {
+					margin-top: 10px;
+					text-align: center;
+					font-size: var(--font-size-base);
+				}
+			}
+		}
+	}
+}

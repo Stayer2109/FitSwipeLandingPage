@@ -1,0 +1,51 @@
+.about-section-container {
+    position: relative;
+    width: 100%;
+    background: white;
+    padding: 0 100px;
+
+    .content-wrapper {
+        display: grid;
+        align-items: center;
+        padding: 20px;
+        grid-template-columns: 1fr 1fr;
+        position: relative;
+        z-index: 2; /* Ensure content is above the skewed background */
+        height: auto; /* Allow the wrapper to grow based on content */
+
+        .figure-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .text-container {
+            align-self: start;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .title {
+                font-size: var(--font-size-hero);
+            }
+
+            .paragraph {
+                font-size: var(--font-size-base);
+                color: white;
+            }
+        }
+    }
+
+    /* Skewed background relative to content-wrapper */
+    &::before {
+        content: "";
+        position: absolute;
+        top: 36%;
+        left: 0;
+        width: 100%;
+        height: 60%; /* Set the height to 55% of the content-wrapper */
+        background: var(--APP-GREEN-COLOR);
+        transform: skewY(-5deg);
+        transform-origin: top left;
+        z-index: 1;
+    }
+}
