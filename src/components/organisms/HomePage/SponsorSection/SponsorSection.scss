@@ -1,0 +1,29 @@
+.sponsor-container {
+	& > h1 {
+		font-style: italic;
+		font-weight: bold;
+		font-size: var(--font-size-hero);
+		text-align: center;
+	}
+
+	.divine-line {
+		background: var(--APP-GREEN-COLOR);
+		width: 20%;
+		height: 3px;
+		margin: auto;
+	}
+
+	.sponsor-items {
+		display: grid;
+		margin: auto;
+		margin-top: 20px;
+		width: 80%;
+		grid-template-columns: 1fr 1fr 1fr;
+		justify-items: center;
+		row-gap: 50px;
+
+		.item {
+			width: 300px;
+		}
+	}
+}

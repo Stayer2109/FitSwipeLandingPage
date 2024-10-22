@@ -12,10 +12,13 @@
   "dependencies": {
     "@fontsource/josefin-sans": "^5.1.0",
     "axios": "^1.7.7",
+    "cloudinary-video-player": "^2.1.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-player": "^2.16.0",
     "react-router-dom": "^6.27.0",
-    "sass": "^1.80.3"
+    "sass": "^1.80.3",
+    "videojs-youtube": "^3.0.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.11.1",
@@ -30,6 +33,7 @@
     "globals": "^15.9.0",
     "postcss": "^8.4.47",
     "tailwindcss": "^3.4.14",
+    "video.js": "^8.18.1",
     "vite": "^5.4.8"
   }
 }

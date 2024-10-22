@@ -1,0 +1,38 @@
+.video-container {
+	position: relative;
+
+	& > h1 {
+		font-size: var(--font-size-hero);
+		text-align: center;
+		font-style: italic;
+		font-weight: bold;
+	}
+
+	.divine-line {
+		background: var(--APP-GREEN-COLOR);
+		width: 20%;
+		height: 3px;
+		margin: auto;
+	}
+
+	.video-player {
+		margin: auto;
+		margin-top: 20px;
+		width: 40%;
+		height: 40%;
+		padding: 10px;
+		background-color: var(--APP-GREEN-COLOR);
+		border-radius: 12px;
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		height: 150px;
+    top: 50%;
+    transform: translateY(-20%);
+    z-index: -1;
+		width: 100%;
+		background-color: var(--APP-GREEN-COLOR);
+	}
+}
