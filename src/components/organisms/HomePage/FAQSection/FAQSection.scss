@@ -1,0 +1,14 @@
+.faq-container {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	margin: auto;
+	width: 75%;
+
+	& > h1 {
+		font-size: var(--font-size-hero);
+		font-style: italic;
+		font-weight: bold;
+		text-align: center;
+	}
+}

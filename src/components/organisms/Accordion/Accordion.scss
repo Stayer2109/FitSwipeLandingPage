@@ -1,0 +1,50 @@
+// Accordion.scss
+.accordion {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	overflow: hidden;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+
+	.accordion-header {
+		background-color: #f4f4f4;
+		padding: 15px;
+		cursor: pointer;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		h3 {
+			margin: 0;
+			font-size: var(--font-size-h5);
+			color: white;
+		}
+
+		.triangle-icon {
+			transform: rotate(-90deg);
+			transition: transform 0.3s ease;
+
+			&.open {
+				transform: rotate(-180deg); /* Rotate to point down */
+			}
+		}
+	}
+
+	.accordion-content {
+		height: 0; // Start with 0 height for smooth expansion
+		overflow: hidden;
+		transition: height 300ms cubic-bezier(0.4, 0, 0.2, 1),
+			padding 300ms cubic-bezier(0.4, 0, 0.2, 1);
+		padding: 0 15px;
+		background-color: #fafafa; // Optional: mimic MUI accordion background
+
+		p {
+			margin: 0;
+			padding: 10px 0;
+		}
+	}
+
+	&.open .accordion-content {
+		padding: 15px; // When open, add padding
+	}
+}

@@ -1,8 +1,10 @@
 .offer-willing-container {
 	.offer-container {
 		& > h1 {
-			font-size: var(--font-size-h2);
+			font-size: var(--font-size-hero);
 			text-align: center;
+			font-style: italic;
+			font-weight: bold;
 		}
 
 		.offer-item-container {
@@ -47,9 +49,13 @@
 	}
 
 	.willing-container {
+		margin-top: 50px;
+
 		& > h1 {
-			font-size: var(--font-size-h2);
+			font-size: var(--font-size-hero);
 			text-align: center;
+			font-weight: bold;
+			font-style: italic;
 		}
 
 		.willing-item-container {
