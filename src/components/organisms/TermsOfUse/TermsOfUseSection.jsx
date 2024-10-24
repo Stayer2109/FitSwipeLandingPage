@@ -11,7 +11,7 @@ const TermsOfUseSection = () => {
 					alt="LightWeight"
 					className="light-weight-img"
 				/>
-				<h1>Chính sách bảo mật</h1>
+				<h1>Điều khoản sử dụng</h1>
 			</div>
 
 			<ul className="terms-of-use-items-container">

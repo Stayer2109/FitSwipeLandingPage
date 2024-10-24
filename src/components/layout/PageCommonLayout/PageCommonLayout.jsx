@@ -7,15 +7,15 @@ import Header from "../../organisms/Header/Header";
 const PageCommonLayout = () => {
 	return (
 		<>
-			<header className="page-header">
+			{/* <header className="page-header">
 				<Header isTermOfUse={false} />
-			</header>
+			</header> */}
 			<main className="page-body">
 				<Outlet />
 			</main>
-			<footer className="page-footer">
+			{/* <footer className="page-footer">
 				<Footer />
-			</footer>
+			</footer> */}
 		</>
 	);
 };

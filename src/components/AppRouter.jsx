@@ -7,54 +7,57 @@ import TermsOfUsePageCommonLayout from "./layout/TermsOfUsePageCommonLayout/Term
 import TermsOfUsePage from "./pages/TermsOfUsePage/TermsOfUsePage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage/PrivacyPolicyPage";
 import LicensePage from "./pages/LicensePage/LicensePage";
+import ScrollToTop from "./utils/ScrollToTop";
 
 const AppRouter = () => {
 	return (
-		<Routes>
-			{/* COMMON PAGE LAYOUT */}
-			<Route element={<PageCommonLayout />}>
-				<Route
-					index
-					element={<HomePage />}
-				/>
-			</Route>
+		<ScrollToTop>
+			<Routes>
+				{/* COMMON PAGE LAYOUT */}
+				<Route element={<PageCommonLayout />}>
+					<Route
+						index
+						element={<HomePage />}
+					/>
+				</Route>
 
-			<Route
-				path="/terms-of-use"
-				element={<TermsOfUsePageCommonLayout />}
-			>
 				<Route
-					index
-					element={<TermsOfUsePage />}
-				/>
-			</Route>
+					path="/terms-of-use"
+					element={<TermsOfUsePageCommonLayout />}
+				>
+					<Route
+						index
+						element={<TermsOfUsePage />}
+					/>
+				</Route>
 
-			<Route
-				path="/privacy-policy"
-				element={<TermsOfUsePageCommonLayout />}
-			>
 				<Route
-					index
-					element={<PrivacyPolicyPage />}
-				/>
-			</Route>
+					path="/privacy-policy"
+					element={<TermsOfUsePageCommonLayout />}
+				>
+					<Route
+						index
+						element={<PrivacyPolicyPage />}
+					/>
+				</Route>
 
-			<Route
-				path="/license"
-				element={<TermsOfUsePageCommonLayout />}
-			>
 				<Route
-					index
-					element={<LicensePage />}
-				/>
-			</Route>
+					path="/license"
+					element={<TermsOfUsePageCommonLayout />}
+				>
+					<Route
+						index
+						element={<LicensePage />}
+					/>
+				</Route>
 
-			{/* Catch-all for undefined routes */}
-			<Route
-				path="*"
-				element={<ErrorPage />}
-			/>
-		</Routes>
+				{/* Catch-all for undefined routes */}
+				<Route
+					path="*"
+					element={<ErrorPage />}
+				/>
+			</Routes>
+		</ScrollToTop>
 	);
 };
 

@@ -6,7 +6,7 @@
 	width: 120px;
 	height: 120px;
 	margin: auto;
-	margin-top: 50px;
+	margin-top: calc(var(--header-height) + 50px);
 
 	& > h1 {
 		font-size: var(--font-size-h3);
