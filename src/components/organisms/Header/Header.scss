@@ -2,13 +2,21 @@
 	display: grid;
 	grid-template-columns: auto 3fr;
 	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+	background-color: white;
 	align-items: center;
 	padding: 10px 50px;
+	position: fixed;
+	left: 0;
+	z-index: 5;
+	right: 0;
+	top: 0;
+	height: var(--header-height);
 
 	.icon-container {
 		display: flex;
 		align-items: center;
 		gap: 20px;
+		cursor: pointer;
 
 		.image-item {
 			width: 80px;
@@ -36,6 +44,24 @@
 
 					&:hover {
 						background-color: #b9f08d;
+						transition: background-color 0.25s;
+					}
+				}
+
+				// &.active > a {
+				// 	background-color: #b9f08d; // Same background as hover for the selected state
+				// }
+			}
+
+			.header-item-1 {
+				& > a {
+					padding: 10px 20px;
+					line-height: inherit;
+					margin: 0 10px;
+
+					&:hover {
+						background-color: #b9f08d;
+						transition: background-color 0.25s;
 					}
 				}
 

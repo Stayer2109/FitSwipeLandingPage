@@ -1,32 +1,37 @@
 .homepage-container {
 	.welcome-section {
+		padding-top: var(--header-height);
 	}
 
 	.about-us-section {
-		margin-top: 50px;
+		padding-top: 100px;
 	}
 
 	.offer-section-container {
-		margin-top: 50px;
+		padding-top: 100px;
 	}
 
 	.feature-section-container {
-		margin-top: 100px;
+		padding-top: 100px;
 	}
 
 	.trailer-video-section-container {
-		margin-top: 100px;
+		padding-top: 100px;
 	}
 
 	.sponsor-section-container {
-		margin-top: 100px;
+		padding-top: 150px;
 	}
 
 	.waywf-section-container {
-		margin-top: 100px;
+		padding-top: 100px;
 	}
 
 	.faq-section-container {
-		margin-top: 100px;
+		padding-top: 100px;
+	}
+
+	.page-footer {
+		margin-top: 70px;
 	}
 }

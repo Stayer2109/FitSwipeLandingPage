@@ -11,7 +11,7 @@ const PrivacyPolicySection = () => {
 					alt="LightWeight"
 					className="light-weight-img"
 				/>
-				<h1>Điều khoản sử dụng</h1>
+				<h1>Chính sách bảo mật</h1>
 			</div>
 
 			<ul className="privacy-policy-items-container">
