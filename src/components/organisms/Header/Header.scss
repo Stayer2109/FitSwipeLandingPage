@@ -38,6 +38,10 @@
 						background-color: #b9f08d;
 					}
 				}
+
+				&.active > a {
+					background-color: #b9f08d; // Same background as hover for the selected state
+				}
 			}
 		}
 	}
