@@ -1,6 +1,6 @@
 .feature-container {
 	.favorite-pt-container {
-		height: 300px;
+		height: fit-content;
 		background-color: var(--APP-GREEN-COLOR);
 		display: grid;
 		grid-template-columns: 1.2fr 1fr;
@@ -35,6 +35,12 @@
 				transform: translate(-50%, -15%);
 				width: 250px;
 				z-index: 6;
+				height: calc(100% + 80px);
+
+				.img1 {
+					height: 100%;
+					object-fit: cover;
+				}
 
 				.information-section {
 					position: absolute;
@@ -145,6 +151,8 @@
 				top: 0;
 				right: 0;
 				width: 230px;
+				object-fit: cover;
+				height: calc(100% + 50px);
 				transform: translate(-72%, -12.5%);
 				filter: brightness(0.9);
 			}
@@ -155,6 +163,8 @@
 				top: 0;
 				right: 0;
 				width: 160px;
+				object-fit: cover;
+				height: calc(100% + 10px);
 				transform: translate(-160%, -8%);
 				filter: brightness(0.7);
 			}
@@ -164,7 +174,9 @@
 				z-index: 3;
 				top: 0;
 				right: 0;
+				object-fit: cover;
 				width: 180px;
+				height: calc(100% + 50px);
 				transform: translate(-58%, -13%);
 				filter: brightness(0.9);
 			}
@@ -174,7 +186,9 @@
 				z-index: 2;
 				top: 0;
 				right: 0;
+				object-fit: cover;
 				width: 220px;
+				height: calc(100% + 10px);
 				transform: translate(-40%, -10%);
 				filter: brightness(0.7);
 			}
@@ -218,6 +232,7 @@
 
 					& > img {
 						border: 3px solid #63b900;
+						object-fit: cover;
 					}
 
 					.avatar-container {
@@ -256,6 +271,7 @@
 
 					& > img {
 						border: 3px solid #6750a4;
+						object-fit: cover;
 					}
 
 					.avatar-container {

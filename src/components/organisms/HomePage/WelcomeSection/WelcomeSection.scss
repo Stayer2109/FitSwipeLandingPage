@@ -27,72 +27,81 @@
 				height: auto; /* Ensures the black image maintains aspect ratio */
 			}
 
-			.title-container {
-				position: absolute;
-				width: 55%;
-				top: 20%; /* Adjust positioning as necessary */
-				left: 50%; /* Center horizontally and vertically */
-				transform: translate(-50%, -50%);
-				text-align: center;
-				display: grid;
-				grid-template-columns: 2fr;
-				grid-template-rows: 2fr;
-
-				& > h1 {
-					color: white; /* Ensure text is visible over the black background */
-					font-size: var(--font-size-h2);
-				}
-
-				.nd2 {
-					grid-row: 2;
-					grid-column: 2;
-					font-size: 40px;
-					margin-left: -70px;
-					font-style: italic;
-				}
-			}
-
-			.quote-container {
-				width: 65%;
-				position: absolute;
-				top: 50%; /* Adjust positioning as necessary */
-				left: 50%; /* Center horizontally and vertically */
-				transform: translate(-50%, -50%);
-				text-align: justify;
+			.information-container {
 				display: flex;
-				gap: 20px;
+				flex-direction: column;
 
-				.quote {
-					color: white;
-					font-size: var(--font-size-base);
-					font-weight: 300;
-				}
+				.title-container {
+					position: absolute;
+					width: 90%; /* Adjust width to fit more content */
+					max-width: 100%; /* Ensure it doesn't overflow */
+					top: 20%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					text-align: center;
+					display: grid;
+					grid-template-columns: auto auto;
+					grid-template-rows: 2fr;
 
-				.right-apostrophe {
-					align-content: end;
-				}
-			}
+					& > h1 {
+						color: white;
+						font-size: var(--font-size-h2);
+						max-width: 100%; /* Ensure the text fits within the container */
+						word-wrap: break-word; /* Prevent long words from overflowing */
+					}
 
-			.button-container {
-				position: absolute;
-				top: 75%; /* Adjust positioning as necessary */
-				left: 50%; /* Center horizontally and vertically */
-				transform: translate(-50%, -50%);
-				text-align: center;
-
-				.text {
-					color: white;
-					font-weight: 300;
-
-					& > p:not(.supported-text) {
-						font-weight: bold;
+					.nd2 {
+						grid-row: 2;
+						grid-column: 2;
+						font-size: 40px;
+						margin-left: -100px;
+						font-style: italic;
+						max-width: 100%; /* Ensure the second heading fits as well */
 					}
 				}
 
-				.btns {
-					margin-top: 20px;
+				.quote-container {
+					width: 65%;
+					position: absolute;
+					top: 50%; /* Adjust positioning as necessary */
+					left: 50%; /* Center horizontally and vertically */
+					transform: translate(-50%, -50%);
+					text-align: justify;
 					display: flex;
 					gap: 20px;
+
+					.quote {
+						color: white;
+						font-size: var(--font-size-base);
+						font-weight: 300;
+					}
+
+					.right-apostrophe {
+						align-content: end;
+					}
+				}
+
+				.button-container {
+					position: absolute;
+					top: 75%; /* Adjust positioning as necessary */
+					left: 50%; /* Center horizontally and vertically */
+					transform: translate(-50%, -50%);
+					text-align: center;
+
+					.text {
+						color: white;
+						font-weight: 300;
+
+						& > p:not(.supported-text) {
+							font-weight: bold;
+						}
+					}
+
+					.btns {
+						margin-top: 20px;
+						display: flex;
+						gap: 20px;
+					}
 				}
 			}
 		}
