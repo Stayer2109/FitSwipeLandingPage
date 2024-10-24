@@ -1,0 +1,44 @@
+.error-screen-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	.error-img-container {
+		width: 700px;
+		height: 420px;
+
+		.error-img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	.error-text-container {
+		color: var(--PRIMARY-COLOR);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin-top: 10px;
+
+		.error-text-title {
+			color: red;
+			font-size: var(--font-size-h1);
+		}
+	}
+
+	.home-btn {
+		margin-top: 15px;
+		font-size: 16px;
+		cursor: pointer;
+		color: blue;
+		border: none;
+		background-color: transparent;
+		text-decoration: underline;
+
+		&:hover {
+			color: red;
+		}
+	}
+}
