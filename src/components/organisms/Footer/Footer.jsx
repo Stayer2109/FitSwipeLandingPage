@@ -31,7 +31,7 @@ const Footer = () => {
         <ul className='terms-items-container'>
           <li className="item-title"><a href="">Thông tin pháp lý</a></li>
           <li className="item"><a href="">Chính sách bảo mật</a></li>
-          <li className="item"><a href="">Điều khoản sử dụng</a></li>
+          <li className="item"><a href="terms-of-use">Điều khoản sử dụng</a></li>
           <li className="item"><a href="">Giấy chứng nhận</a></li>
         </ul>
 

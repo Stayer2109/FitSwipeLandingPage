@@ -1,0 +1,24 @@
+.terms-of-use-page-footer {
+	margin-top: 70px;
+}
+
+.logo-image-container {
+	width: 120px;
+	height: 120px;
+	margin: auto;
+	margin-top: 50px;
+
+	& > h1 {
+		font-size: var(--font-size-h3);
+		font-weight: bold;
+		font-style: italic;
+		text-align: center;
+	}
+}
+
+.weight-image-container {
+	margin-top: 50px;
+	width: 100%;
+	z-index: 1;
+	margin-bottom: -80px;
+}
