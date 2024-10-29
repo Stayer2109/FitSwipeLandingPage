@@ -6,7 +6,7 @@
 		display: flex;
 		align-items: center;
 		gap: 10px;
-		margin-bottom: 40px;
+		margin-bottom: 20px;
 
 		.light-weight-img {
 			height: 50px;
@@ -19,10 +19,18 @@
 		}
 	}
 
+	.commit-content {
+		width: 92%;
+		margin: auto;
+		margin-bottom: 20px;
+		font-size: var(--font-size-h6);
+		font-style: italic;
+	}
+
 	.terms-of-use-items-container {
 		list-style-type: decimal;
-		width: 100%;
-		padding-left: 6.7%;
+		width: 90%;
+		margin: auto;
 		display: flex;
 		flex-direction: column;
 		gap: 20px;
@@ -41,6 +49,13 @@
 			&::marker {
 				font-size: var(--font-size-h4);
 				font-weight: bold;
+			}
+
+			.item-content {
+				width: 95%;
+				margin: auto;
+				list-style-type: disc;
+				margin-bottom: 10px;
 			}
 		}
 	}
