@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./PrivacyPolicySection.scss";
 import LightWeight from "../../../assets/images/about_use_img.png";
+import { PrivacyPolicyList } from "../../../data/PrivacyPolicy/PrivacyPolicyList";
 
 const PrivacyPolicySection = () => {
+	const [privacyItems, setPrivacyItems] = useState([]);
+
+	useEffect(() => {
+		setPrivacyItems(PrivacyPolicyList.data);
+		console.log(PrivacyPolicyList.data);
+	}, []);
+
 	return (
 		<div className="privacy-policy-container">
 			<div className="title-container">
@@ -11,87 +19,75 @@ const PrivacyPolicySection = () => {
 					alt="LightWeight"
 					className="light-weight-img"
 				/>
-				<h1>Chính sách bảo mật</h1>
+				<div className="text-content">
+					<h1>Chính sách bảo mật</h1>
+					<p>Cập nhật lần cuối: 29/10/2024</p>
+				</div>
 			</div>
 
+			<p className="commit-content">FitSwipe cam kết bảo vệ quyền riêng tư và an toàn thông tin cá nhân của người dùng. Chính sách này sẽ giúp bạn hiểu rõ cách chúng tôi thu thập, sử dụng, bảo vệ và chia sẻ thông tin cá nhân. Khi sử dụng FitSwipe, bạn đồng ý với các điều khoản bảo mật này.</p>
+
 			<ul className="privacy-policy-items-container">
-				<li className="item">
-					<h1>Acceptance of Terms</h1>
-					<p>
-						Welcome to Fitswipe. By accessing or using our website and services,
-						you agree to comply with and be bound by the following terms and
-						conditions (the "Terms of Service" or "Agreement"). Please read
-						these terms carefully, and if you do not agree to them, you should
-						not use this site or our services. We reserve the right to update
-						these Terms at any time without prior notice.
-					</p>
-				</li>
-				<li className="item">
-					<h1>Acceptance of Terms</h1>
-					<p>
-						Welcome to Fitswipe. By accessing or using our website and services,
-						you agree to comply with and be bound by the following terms and
-						conditions (the "Terms of Service" or "Agreement"). Please read
-						these terms carefully, and if you do not agree to them, you should
-						not use this site or our services. We reserve the right to update
-						these Terms at any time without prior notice.
-					</p>
-				</li>
-				<li className="item">
-					<h1>Acceptance of Terms</h1>
-					<p>
-						Welcome to Fitswipe. By accessing or using our website and services,
-						you agree to comply with and be bound by the following terms and
-						conditions (the "Terms of Service" or "Agreement"). Please read
-						these terms carefully, and if you do not agree to them, you should
-						not use this site or our services. We reserve the right to update
-						these Terms at any time without prior notice.
-					</p>
-				</li>
-				<li className="item">
-					<h1>Acceptance of Terms</h1>
-					<p>
-						Welcome to Fitswipe. By accessing or using our website and services,
-						you agree to comply with and be bound by the following terms and
-						conditions (the "Terms of Service" or "Agreement"). Please read
-						these terms carefully, and if you do not agree to them, you should
-						not use this site or our services. We reserve the right to update
-						these Terms at any time without prior notice.
-					</p>
-				</li>
-				<li className="item">
-					<h1>Acceptance of Terms</h1>
-					<p>
-						Welcome to Fitswipe. By accessing or using our website and services,
-						you agree to comply with and be bound by the following terms and
-						conditions (the "Terms of Service" or "Agreement"). Please read
-						these terms carefully, and if you do not agree to them, you should
-						not use this site or our services. We reserve the right to update
-						these Terms at any time without prior notice.
-					</p>
-				</li>
-				<li className="item">
-					<h1>Acceptance of Terms</h1>
-					<p>
-						Welcome to Fitswipe. By accessing or using our website and services,
-						you agree to comply with and be bound by the following terms and
-						conditions (the "Terms of Service" or "Agreement"). Please read
-						these terms carefully, and if you do not agree to them, you should
-						not use this site or our services. We reserve the right to update
-						these Terms at any time without prior notice.
-					</p>
-				</li>
-				<li className="item">
-					<h1>Acceptance of Terms</h1>
-					<p>
-						Welcome to Fitswipe. By accessing or using our website and services,
-						you agree to comply with and be bound by the following terms and
-						conditions (the "Terms of Service" or "Agreement"). Please read
-						these terms carefully, and if you do not agree to them, you should
-						not use this site or our services. We reserve the right to update
-						these Terms at any time without prior notice.
-					</p>
-				</li>
+				{
+					privacyItems.length > 0 ? (
+						privacyItems.map((item, index) => (
+							<li className="item" key={index}>
+								<h1>{item.title}</h1>
+								{
+									item.note && <p>{item.note}</p>
+								}
+
+								{/* RENDER IF THERE ARE CONTENTS */}
+								{
+									item.content != null && (
+										<ul className="item-content">
+											{
+												item.content.map((content, index) => (
+													<li key={index}>
+														<p>{content}</p>
+													</li>
+												))
+											}
+										</ul>
+									)
+								}
+
+								{/* RENDER IF THERE IS ANY SUB_DATA */}
+								{
+									item.sub_data != null && item.sub_data.length > 0 && (
+										<ul className="sub-data-content">
+											{
+												item.sub_data.map((subItem, subIndex) => (
+													<li key={`subdata-${index}-${subIndex}`}>
+														<h2 className="sub-data-title">{`${index + 1}.${subIndex + 1} ${subItem.title}`}</h2>
+														{
+															subItem.content != null && (
+																<ul className="sub-item-content">
+																	{
+																		subItem.content.map((content, index) => (
+																			<li key={`subdata-${index}-${subIndex}`}>{content}</li>
+																		))
+																	}
+																</ul>
+															)
+														}
+													</li>
+												))
+											}
+										</ul>
+									)
+								}
+
+								{
+									item.note2 && <p>{item.note2}</p>
+								}
+
+							</li>
+						))
+					) : (
+						null
+					)
+				}
 			</ul>
 		</div>
 	);
