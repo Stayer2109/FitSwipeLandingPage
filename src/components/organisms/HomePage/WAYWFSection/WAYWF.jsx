@@ -9,11 +9,7 @@ const WAYWF = () => {
 			<div className="text-container">
 				<h1 className="title">Còn đợi chờ gì nữa?</h1>
 				<p className="text-content">
-					Lorem ipsum odor amet, consectetuer adipiscing elit. Et egestas
-					scelerisque non leo at dignissim. Ullamcorper eget cras fermentum
-					dignissim imperdiet aliquam. Aptent nisi malesuada odio blandit
-					vulputate sed mi imperdiet! Finibus curabitur natoque euismod dui
-					fermentum semper.
+				Hãy tải ứng dụng để trải nghiệm ngay nào! 
 				</p>
 				<button className="btn-download">Tải về ngay</button>
 			</div>
