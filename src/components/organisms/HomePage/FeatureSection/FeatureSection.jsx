@@ -16,7 +16,7 @@ const FeatureSection = () => {
             <div className='favorite-pt-container'>
                 <div className='text-content'>
                     <h1>Thả tim với PT yêu thích</h1>
-                    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Et egestas scelerisque non leo at dignissim. Ullamcorper eget cras fermentum dignissim imperdiet aliquam. Aptent nisi malesuada odio blandit vulputate sed mi imperdiet! Finibus curabitur natoque euismod dui fermentum semper. Aenean ultricies nullam fusce hendrerit aliquet hendrerit accumsan. Fames senectus faucibus praesent orci class litora suscipit feugiat elementum. Tortor hac urna purus blandit nascetur nulla. Hac quis primis ipsum netus conubia cubilia ipsum. Velit varius nam; porttitor maecenas aptent faucibus mi hendrerit ultrices.</p>
+                    <p>Lấy ý tưởng từ khả năng “vuốt” độc lạ của một số ứng dụng hẹn hò thịnh hành hiện tại. FitSwipe được xây dựng từ nền tảng vuốt và tương hợp cực kỳ đơn giản và thú vị, giúp khách hàng có thể dễ dàng xem hồ sơ và tương hợp với những người mình mong muốn.</p>
                 </div>
 
                 <div className='images-container'>
@@ -99,7 +99,7 @@ const FeatureSection = () => {
                 {/* SECOND SECTION */}
                 <div className='second-section'>
                     <h1>Cặp đôi hoàn hảo để rèn luyện</h1>
-                    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Et egestas scelerisque non leo at dignissim. Ullamcorper eget cras fermentum dignissim imperdiet aliquam. Aptent nisi malesuada odio blandit vulputate sed mi imperdiet! Finibus curabitur natoque euismod dui fermentum semper. Aenean ultricies nullam fusce hendrerit aliquet hendrerit accumsan. Fames senectus faucibus praesent orci class litora suscipit feugiat elementum. Tortor hac urna purus blandit nascetur nulla. Hac quis primis ipsum netus conubia cubilia ipsum. Velit varius nam; porttitor maecenas aptent faucibus mi hendrerit ultrices.</p>
+                    <p>Qua khả năng tương hợp dễ dàng, các học viên và PT có thể tìm đến nhau một cách tối ưu và thoải mái hơn. Từ đó bắt đầu phát triển con đường đồng hành riêng của cả hai.</p>
                     <div className="divine-line" />
                 </div>
             </div>
@@ -109,7 +109,7 @@ const FeatureSection = () => {
                 {/* FIRST SECTION */}
                 <div className='first-section'>
                     <h1>Và còn nhiều hơn thế nữa</h1>
-                    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Et egestas scelerisque non leo at dignissim. Ullamcorper eget cras fermentum dignissim imperdiet aliquam. Aptent nisi malesuada odio blandit vulputate sed mi imperdiet! Finibus curabitur natoque euismod dui fermentum semper. Aenean ultricies nullam fusce hendrerit aliquet hendrerit accumsan. Fames senectus faucibus praesent orci class litora suscipit feugiat elementum. Tortor hac urna purus blandit nascetur nulla. Hac quis primis ipsum netus conubia cubilia ipsum. Velit varius nam; porttitor maecenas aptent faucibus mi hendrerit ultrices.</p>
+                    <p>Ngoài ra, những tính năng khác cũng sẽ tạo nên một trải nghiệm thú vị cho người dùng như đặt lịch, xem lịch, các bài tập mẫu.</p>
                     <div className="divine-line" />
                 </div>
 
