@@ -1,4 +1,3 @@
-import React from 'react'
 import AppIcon from '../../../assets/images/app_icon_white.png'
 import './Footer.scss'
 import { EmailIcon, PhoneIcon, WebsiteIcon } from '../../atoms/Icon/Icon'
@@ -30,16 +29,15 @@ const Footer = () => {
       <div className='second-section'>
         <ul className='terms-items-container'>
           <li className="item-title"><a href="">Thông tin pháp lý</a></li>
-          <li className="item"><a href="">Chính sách bảo mật</a></li>
+          <li className="item"><a href="privacy-policy">Chính sách bảo mật</a></li>
           <li className="item"><a href="terms-of-use">Điều khoản sử dụng</a></li>
-          <li className="item"><a href="">Giấy chứng nhận</a></li>
         </ul>
 
         <ul className='linked-page-container'>
           <li className="item-title"><a href="">Trang liên kết</a></li>
           <li className="item">
             <img src="" alt="" />
-            <a href="">Facebook</a>
+            <a href="https://www.facebook.com/profile.php?id=61565960663162">Facebook</a>
           </li>
           <li className="item"><a href="">Twitter</a></li>
           <li className="item"><a href="">TikTok</a></li>
@@ -58,7 +56,7 @@ const Footer = () => {
           </li>
           <li className="item">
             <WebsiteIcon width={"28px"} height={"28px"} color={"white"} />
-            <a href="">Website: www.fitswipeofficial.com</a>
+            <a href="">Website: https://fit-swipe.vercel.app</a>
           </li>
         </ul>
       </div>
