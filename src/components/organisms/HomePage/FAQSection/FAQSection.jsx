@@ -1,17 +1,31 @@
-import React from 'react'
 import './FAQSection.scss'
 import Accordion from '../../Accordion/Accordion'
+import { useEffect, useState } from 'react';
+import { FaqList } from '../../../../data/FAQs/FaqList';
 
 const FAQSection = () => {
+  const [faqs, setFaqs] = useState([]);
+
+  useEffect(() => {
+    setFaqs(FaqList)
+    console.log(FaqList);
+  }, [])
+
   return (
     <div className='faq-container'>
       <h1>Những câu hỏi thường gặp</h1>
 
-      <Accordion title="Có cách nào để..." content="Lorem ipsum odor amet, consectetuer adipiscing elit. Et egestas scelerisque non leo at dignissim. Ullamcorper eget cras fermentum dignissim imperdiet aliquam. Aptent nisi malesuada odio blandit vulputate sed mi imperdiet! Finibus curabitur natoque euismod dui fermentum semper." color={"#6FB700"} />
-      <Accordion title="Có cách nào để..." content="Lorem ipsum odor amet, consectetuer adipiscing elit. Et egestas scelerisque non leo at dignissim. Ullamcorper eget cras fermentum dignissim imperdiet aliquam. Aptent nisi malesuada odio blandit vulputate sed mi imperdiet! Finibus curabitur natoque euismod dui fermentum semper." color={"#6FB700"} />
-      <Accordion title="Có cách nào để..." content="Lorem ipsum odor amet, consectetuer adipiscing elit. Et egestas scelerisque non leo at dignissim. Ullamcorper eget cras fermentum dignissim imperdiet aliquam. Aptent nisi malesuada odio blandit vulputate sed mi imperdiet! Finibus curabitur natoque euismod dui fermentum semper." color={"#6FB700"} />
+      {
+        faqs.data != null ? (
+          faqs.data.map((faqItem, index) => (
+            <Accordion key={index} data={[faqItem]} />
+          ))
+        ) : (
+          <Accordion isEmpty={true} />
+        )
+      }
     </div>
-  )
+  );
 }
 
 export default FAQSection
