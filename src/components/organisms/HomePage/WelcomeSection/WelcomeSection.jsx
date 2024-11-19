@@ -1,4 +1,3 @@
-import React from "react";
 import SliderImage from "../../../../assets/images/slider-img1.png";
 import BlackBackground from "../../../../assets/images/black_background.png";
 import "./WelcomeSection.scss";
@@ -56,7 +55,7 @@ const WelcomeSection = () => {
 
 								<div className="btns">
 									<ImageButton forElement={"chplay"} />
-									<ImageButton forElement={"appstore"} />
+									{/* <ImageButton forElement={"appstore"} /> */}
 								</div>
 							</div>
 						</div>
