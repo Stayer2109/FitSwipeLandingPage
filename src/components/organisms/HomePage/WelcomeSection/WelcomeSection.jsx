@@ -1,4 +1,3 @@
-import React from "react";
 import SliderImage from "../../../../assets/images/slider-img1.png";
 import BlackBackground from "../../../../assets/images/black_background.png";
 import "./WelcomeSection.scss";
@@ -9,6 +8,17 @@ import {
 import ImageButton from "../../../atoms/ImageButton/ImageButton";
 
 const WelcomeSection = () => {
+	// HANDLE DOWNLOAD BUTTON CLICK
+	const handleDownloadButtonClick = (e) => {
+		e.preventDefault();
+
+		// Redirect to Google Play Store
+		window.open(
+			"https://play.google.com/store/apps/details?id=com.oldgold.fitswipe",
+			"_blank"
+		);
+	}
+
 	return (
 		<div className="welcome-image-container">
 			<div className="img-container">
@@ -55,8 +65,8 @@ const WelcomeSection = () => {
 								<p className="supported-text">Tải ứng dụng của chúng tôi</p>
 
 								<div className="btns">
-									<ImageButton forElement={"chplay"} />
-									<ImageButton forElement={"appstore"} />
+									<ImageButton forElement={"chplay"} onClick={handleDownloadButtonClick} />
+									{/* <ImageButton forElement={"appstore"} /> */}
 								</div>
 							</div>
 						</div>
